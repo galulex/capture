@@ -1,0 +1,18 @@
+doctype html
+html
+head
+  title Capture
+  = stylesheet_link_tag    'application', media: 'all'
+  = javascript_include_tag 'application'
+  = csrf_meta_tags
+body
+  .content.pure-g-r
+    .header.pure-u-1
+      .pure-menu.pure-menu-open.pure-menu-fixed.pure-menu-horizontal
+        a.pure-menu-heading href='' SITE
+        ul
+          li.pure-menu-selected= link_to 'Link'
+          li= link_to 'Link'
+          li= link_to 'Link'
+    .splash
+      .pure-u-1= yield
