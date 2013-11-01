@@ -1,0 +1,13 @@
+.pure-g-r
+  .pure-u-1
+    .pure-paginator
+      li: button#on-webcam.pure-button
+        i.fa.fa-power-off'
+        | On WebCam
+      li: button#off-webcam.pure-button disabled='disabled' Off WebCam
+      li: button#start-record.pure-button disabled='disabled' Record
+      li: button#stop-record.pure-button disabled='disabled' Stop
+      li: button#save-record.pure-button disabled='disabled' Save
+/* .pure-g-r */
+.pure-u-1
+  video id='video' autoplay='autoplay' muted='muted' controls='controls' data-url=(videos_path)

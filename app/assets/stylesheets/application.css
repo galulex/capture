@@ -13,3 +13,7 @@
  *= require pure
  *= require font-awesome
  */
+
+.splash {
+  margin-top: 40px;
+}

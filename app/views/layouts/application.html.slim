@@ -1,18 +1,20 @@
 doctype html
 html
-head
-  title Capture
-  = stylesheet_link_tag    'application', media: 'all'
-  = javascript_include_tag 'application'
-  = csrf_meta_tags
+  head
+    title Capture
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+    /* script src='https://www.webrtc-experiment.com/RecordRTC.js' */
 body
-  .content.pure-g-r
-    .header.pure-u-1
+  .content
+    .header
       .pure-menu.pure-menu-open.pure-menu-fixed.pure-menu-horizontal
         a.pure-menu-heading href='' SITE
         ul
           li.pure-menu-selected= link_to 'Link'
           li= link_to 'Link'
           li= link_to 'Link'
-    .splash
-      .pure-u-1= yield
+    .splash.pure-g-r
+      .pure-u-1-5
+      .pure-u-3-5= yield
